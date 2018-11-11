@@ -61,7 +61,9 @@ Then, place the file in the p2_continuous-control/ folder in the DRLND GitHub re
 #### Instructions
 
 #TODO#
+
 You have to follow the notebook 'DQN-Unity-ML.ipynb' to train the DQN agent.
 
 If you want to watch the agent in action, jump to the cell "Watch a Smart Agent!". You will load the trained weights from checkpoint file to watch a smart agent!
+
 #TODO#
