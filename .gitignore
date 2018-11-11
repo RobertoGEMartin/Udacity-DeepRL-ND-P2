@@ -102,3 +102,12 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+#Folders
+.ipynb_checkpoints/
+Reacher.app/
+test/
+
+#files
+*.mp4
+#*.gif
