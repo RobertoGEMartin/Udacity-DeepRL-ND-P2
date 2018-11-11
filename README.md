@@ -8,7 +8,7 @@ This repository contains code related to "Project 2 - Continous Control" from Ud
 ### Project Instructions
 
 This repo will train a DeepRL agent to solve the Reacher env
-[Unity Environment]. (<https://github.com/Unity-Technologies/ml-agents).>
+[Unity Environment](https://github.com/Unity-Technologies/ml-agents)
 
 To solve the environment, the DeepRL agent must:
 
@@ -19,8 +19,7 @@ The barrier for solving the second version of the environment is slightly differ
 
 ### The Unity Environment
 
-For this project, you will work with the Reacher environment.
-(https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#reacher).
+For this project, you will work with the [Reacher environment](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#reacher).
 
 ![Reacher Env - gif](./img/reacher.gif "Reacher Env")
 
@@ -58,7 +57,7 @@ Then, place the file in the p2_continuous-control/ folder in the DRLND GitHub re
 
 (For Windows users) Check out [this link](https://support.microsoft.com/en-us/help/827218/how-to-determine-whether-a-computer-is-running-a-32-bit-version-or-64) if you need help with determining if your computer is running a 32-bit version or 64-bit version of the Windows operating system.
 
-(For AWS) If you'd like to train the agent on AWS (and have not enabled a virtual screen)[https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md], then please use this link (version 1)[https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher_Linux_NoVis.zip] or this link (version 2)[https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Linux_NoVis.zip] to obtain the "headless" version of the environment. You will not be able to watch the agent without (enabling a virtual screen)[https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md], but you will be able to train the agent. (To watch the agent, you should follow the instructions to enable a virtual screen, and then download the environment for the Linux operating system above.)
+(For AWS) If you'd like to train the agent on AWS [and have not enabled a virtual screen](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md), then please use this link [version 1](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher_Linux_NoVis.zip) or this link [version 2](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Linux_NoVis.zip) to obtain the "headless" version of the environment. You will not be able to watch the agent without [enabling a virtual screen](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md), but you will be able to train the agent. (To watch the agent, you should follow the instructions to enable a virtual screen, and then download the environment for the Linux operating system above.)
 #### Instructions
 
 #TODO#
