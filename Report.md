@@ -1,5 +1,5 @@
 
-# Report: "Project 1 - Navigation"
+# Report: "Project " - Continous Control"
 
 We will train a DeepRL agent to solve a Unity Environment.
 
