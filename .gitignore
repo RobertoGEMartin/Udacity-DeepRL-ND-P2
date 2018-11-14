@@ -107,7 +107,10 @@ venv.bak/
 .ipynb_checkpoints/
 Reacher.app/
 test/
-apps/
+apps/Crawler.app
+apps/Reacher.app
+apps/Reacher_20_agents.app
+
 
 #files
 *.mp4
