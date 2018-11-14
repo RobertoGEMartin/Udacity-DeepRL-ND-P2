@@ -10,9 +10,15 @@ References
 1. [Udacity Gihub Repo](https://github.com/udacity/deep-reinforcement-learning)
 2. [Unity Docs](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/ML-Agents-Overview.md)
 3. [Unity Paper](https://arxiv.org/abs/1809.02627)
-4. [openai master RL](https://spinningup.openai.com/en/latest/algorithms/ddpg.html)
-5. [Original paper](https://arxiv.org/abs/1509.02971)
-6. [openai Baselines](https://blog.openai.com/better-exploration-with-parameter-noise/)
+4. [OpenAI master RL](https://spinningup.openai.com/en/latest/algorithms/ddpg.html)
+5. [DDPG paper](https://arxiv.org/abs/1509.02971)
+6. [OpenAI Baselines](https://blog.openai.com/better-exploration-with-parameter-noise/)
+7. [Book: Deep Reinforcement Learning Hands-On](https://github.com/PacktPublishing/Deep-Reinforcement-Learning-Hands-On)
+8. [PyTorch Agent Net: reinforcement learning toolkit for pytorch](https://github.com/Shmuma/ptan)
+9. [Reinforcement Learning Coach by Intel® AI Lab](https://nervanasystems.github.io/coach/)
+10. [RL Coach - DDPG - Docs](https://nervanasystems.github.io/coach/algorithms/policy_optimization/ddpg/)
+11. [RL Coach - DDPG - Code](https://github.com/NervanaSystems/coach/blob/master/rl_coach/agents/ddpg_agent.py)
+12. [Modularized Implementation of Deep RL Algorithms in PyTorch](https://github.com/ShangtongZhang/DeepRL)
 #######################################################################################
 '''
 
