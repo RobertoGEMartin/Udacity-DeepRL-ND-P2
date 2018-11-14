@@ -145,3 +145,5 @@ Future ideas for improving the agent's performance.
 4. [openai master RL](https://spinningup.openai.com/en/latest/algorithms/ddpg.html)
 5. [Original paper](https://arxiv.org/abs/1509.02971)
 6. [openai Baselines](https://blog.openai.com/better-exploration-with-parameter-noise/)
+7. [Deep Reinforcement Learning Hands-On](https://github.com/PacktPublishing/Deep-Reinforcement-Learning-Hands-On)
+8. [Deep Reinforcement Learning Hands-On](https://github.com/Shmuma/ptan)
