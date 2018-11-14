@@ -133,6 +133,7 @@ class Agent():
         # Minimize the loss
         self.critic_optimizer.zero_grad()
         critic_loss.backward()
+        torch.nn.utils.clip_grad_norm_(self.critic_local.parameters(), 1)
         self.critic_optimizer.step()
 
         # ---------------------------- update actor ---------------------------- #
@@ -161,18 +162,6 @@ class Agent():
         for target_param, local_param in zip(target_model.parameters(), local_model.parameters()):
             target_param.data.copy_(tau*local_param.data + (1.0-tau)*target_param.data)
 
-    def learnexperiences(self, repeat_learning=10):
-        """
-        Learn, if enough samples are available in memory
-        
-        Params
-        ======
-            repeat_learning: repeat learning N times
-        """
-        if len(self.memory) > BATCH_SIZE:
-            for _ in range(repeat_learning):
-                experiences = self.memory.sample()
-                self.learn(experiences, GAMMA)
 class OUNoise:
     """Ornstein-Uhlenbeck process."""
 
