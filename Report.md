@@ -25,6 +25,7 @@ We will train a DeepRL agent to solve a Unity Environment.
 
 The code is written in PyTorch and Python 3.6.2.
 
+
 Main Files:  
 
 +  Banana.app
@@ -141,3 +142,6 @@ Future ideas for improving the agent's performance.
 1. [Udacity Gihub Repo](https://github.com/udacity/deep-reinforcement-learning)
 2. [Unity Docs](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/ML-Agents-Overview.md)
 3. [Unity Paper](https://arxiv.org/abs/1809.02627)
+4. [openai master RL](https://spinningup.openai.com/en/latest/algorithms/ddpg.html)
+5. [Original paper](https://arxiv.org/abs/1509.02971)
+6. [openai Baselines](https://blog.openai.com/better-exploration-with-parameter-noise/)
