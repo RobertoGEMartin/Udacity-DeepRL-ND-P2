@@ -159,11 +159,12 @@ A plot of rewards per episode is included to illustrate that:
 
 ### Watch The DDPG Agent in Action
 
-Video of The DDPG Agent:
+Video of trained DDPG Agent:
 
 ![Video of Training](./videos/ddpg-agent-11.14.2018.gif "Video of Training")
 
-[youtube video](https://youtu.be/_znGmJF6tKQ)
+
+[youtube video](https://youtu.be/h6WyDX4cvek)
 <!--- 
 [![Trained DQN-Agent](http://img.youtube.com/vi/lBDV3A1hInQ/0.jpg)](http://www.youtube.com/watch?v=lBDV3A1hInQ "Trained DQN-Agent")
 --->
@@ -173,6 +174,13 @@ Video of The DDPG Agent:
 Future ideas for improving the agent's performance.
 
 + Try new algorithms like PPO, A3C, and D4PG that use multiple (non-interacting, parallel) copies of the same agent to distribute the task of gathering experience
++ *TODO*
++ Read book > chapter10 ?
++ Intel >> new alg ?
++ udacity lecture ?
++ Try [Hierarchical Actor Critic (HAC)](https://arxiv.org/abs/1712.00948.pdf) ([code](rl_coach/agents/ddpg_hac_agent.py))
++ Try [Hindsight Experience Replay (HER)](https://arxiv.org/abs/1707.01495.pdf) ([code](rl_coach/memories/episodic/episodic_hindsight_experience_replay.py))
+
 
 ![drl-algorithms.png - gif](./img/drl-algorithms.png "drl-algorithms.png")
 

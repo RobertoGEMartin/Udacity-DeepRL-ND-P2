@@ -71,7 +71,8 @@ class Agent():
         print(self.critic_target)
 
         # Noise process
-        #act_noise (float) – Stddev for Gaussian exploration noise added to policy at training time. (At test time, no noise is added.)
+        # Exploration technique
+        # noise added to policy at training time. (At test time, no noise is added.)
         self.noise = OUNoise(action_size, random_seed)
 
         # Replay memory
@@ -179,6 +180,7 @@ class Agent():
         for target_param, param in zip(target.parameters(), source.parameters()):
             target_param.data.copy_(param.data)
 
+#https://github.com/NervanaSystems/coach/blob/master/rl_coach/exploration_policies/ou_process.py
 class OUNoise:
     """Ornstein-Uhlenbeck process."""
 
