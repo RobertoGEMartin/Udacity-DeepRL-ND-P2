@@ -18,7 +18,7 @@ We will train a DeepRL agent to solve a Unity Environment.
 
 
 + The next image defines the block diagram of ML-Agents toolkit for our sample environment. 
-+ In our project, we use an unique agent.
++ In our project, we use 20 agent.
 
 ![arch-unity-1.png](./img/arch-unity-1.png "arch-unity-1.png")
 
@@ -104,30 +104,29 @@ DDPG is a similarly foundational algorithm to VPG. DDPG is closely connected to 
 
 Algorithms like DDPG and Q-Learning are off-policy, so they are able to reuse old data very efficiently. They gain this benefit by exploiting Bellman’s equations for optimality, which a Q-function can be trained to satisfy using any environment interaction data (as long as there’s enough experience from the high-reward areas in the environment).
 
-### Flow Chart
-
-https://nervanasystems.github.io/coach/algorithms/policy_optimization/ddpg/
-
+### DDPG Flowchart
 ![ddpg-flow-graph](./img/ddpg-flow-graph.png "ddpg-flow-graph")
++ Ref: https://nervanasystems.github.io/coach/algorithms/policy_optimization/ddpg/
 
-
-### Pseudocode
+### DDPG Pseudocode
 ![dpg-pseudocode](./img/ddpg-pseudocode.png "dpg-pseudocode")
++ Ref: https://spinningup.openai.com/en/latest/algorithms/ddpg.html#the-policy-learning-side-of-ddpg
+  
 
 ### Hyper Parameters
 #### DDPG Parameters
 
-+ UFFER_SIZE = int(1e6)   # replay buffer size
-+ BATCH_SIZE = 1024       # minibatch size
-+ GAMMA = 0.99            # discount factor
-+ TAU = 1e-3              # for soft update of target parameters
-+ LR_ACTOR = 1e-3         # learning rate of the actor 
-+ LR_CRITIC = 1e-3        # learning rate of the critic before: 3e-4
-+ WEIGHT_DECAY = 0.0000   # L2 weight decay
-+ EPSILON = 1.0            # noise factor
-+ EPSILON_DECAY = 1e-6     # decay of noise factor
++ BUFFER_SIZE = int(1e6)        # replay buffer size
++ BATCH_SIZE = 1024             # minibatch size
++ GAMMA = 0.99                  # discount factor
++ TAU = 1e-3                    # for soft update of target parameters
++ LR_ACTOR = 1e-3               # learning rate of the actor 
++ LR_CRITIC = 1e-3              # learning rate of the critic before: 3e-4
++ WEIGHT_DECAY = 0.0000         # L2 weight decay
++ EPSILON = 1.0                 # noise factor
++ EPSILON_DECAY = 1e-6          # decay of noise factor
 
-#### Neural Network. Model Architecture & Parameters.
+#### Neural Network. Model Architecture & Parameters
 For this project we use these models:
 
 Actor Model:
@@ -149,7 +148,6 @@ Critic Model:
 ### Plot of Rewards
 
 Environment solved in 170 episodes!	Average Score: 30.06
-
 A plot of rewards per episode is included to illustrate that:
 
 + [ ] the agent receives an average reward (over 100 episodes) of at least +30
@@ -174,15 +172,13 @@ Video of trained DDPG Agent:
 Future ideas for improving the agent's performance.
 
 + Try new algorithms like PPO, A3C, and D4PG that use multiple (non-interacting, parallel) copies of the same agent to distribute the task of gathering experience
-+ *TODO*
-+ Read book > chapter10 ?
-+ Intel >> new alg ?
-+ udacity lecture ?
-+ Try [Hierarchical Actor Critic (HAC)](https://arxiv.org/abs/1712.00948.pdf) ([code](rl_coach/agents/ddpg_hac_agent.py))
-+ Try [Hindsight Experience Replay (HER)](https://arxiv.org/abs/1707.01495.pdf) ([code](rl_coach/memories/episodic/episodic_hindsight_experience_replay.py))
-
 
 ![drl-algorithms.png - gif](./img/drl-algorithms.png "drl-algorithms.png")
+
++ Try new algorithm [Hierarchical Actor Critic (HAC)](https://arxiv.org/abs/1712.00948.pdf) [code](https://github.com/NervanaSystems/coach/blob/master/rl_coach/agents/ddpg_hac_agent.py). HAC enables agents to learn to break down problems involving continuous action spaces into simpler subproblems belonging to differenttime scales. The ability to learn at different resolutions in time may help overcome one of the main challenges in deep reinforcement learning — sample efficiency.
++ Try new algorithm [Hindsight Experience Replay (HER)](https://arxiv.org/abs/1707.01495.pdf) [code](https://github.com/NervanaSystems/coach/blob/master/rl_coach/memories/episodic/episodic_hindsight_experience_replay.py) 
+  + [Video HER: Vanilla DDPG vs DDPG video](https://www.youtube.com/watch?time_continue=130&v=Dz_HuzgMxzo )
+
 
 #### References
 
@@ -198,4 +194,3 @@ Future ideas for improving the agent's performance.
 10. [RL Coach - DDPG - Docs](https://nervanasystems.github.io/coach/algorithms/policy_optimization/ddpg/)
 11. [RL Coach - DDPG - Code](https://github.com/NervanaSystems/coach/blob/master/rl_coach/agents/ddpg_agent.py)
 12. [Modularized Implementation of Deep RL Algorithms in PyTorch](https://github.com/ShangtongZhang/DeepRL)
-   
