@@ -129,6 +129,7 @@ Algorithms like DDPG and Q-Learning are off-policy, so they are able to reuse ol
 #### Neural Network. Model Architecture & Parameters
 For this project we use these models:
 
+~~~~
 Actor Model:
   (bn0): BatchNorm1d(33, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
   (fc1): Linear(in_features=33, out_features=128, bias=True)
@@ -142,6 +143,7 @@ Critic Model:
   (fcs1): Linear(in_features=33, out_features=128, bias=True)
   (fc2): Linear(in_features=132, out_features=128, bias=True)
   (fc3): Linear(in_features=128, out_features=1, bias=True)
+~~~~
 
 ### Training
 
